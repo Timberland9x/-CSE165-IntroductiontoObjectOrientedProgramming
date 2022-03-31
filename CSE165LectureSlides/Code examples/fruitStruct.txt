@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+struct fruit{
+  int num_seeds;
+  double weight;
+  string color;
+
+  void printAttributes();
+};
+
+void fruit::printAttributes(){
+  cout<<"Number of seeds: "<<num_seeds<<endl;
+  cout<<"Weight:" << weight<<endl;
+  cout<<"Color: " << color<<endl;
+}
+
+int main() 
+{
+  fruit banana = {100, .5, "Yellow"};
+  banana.printAttributes();
+}

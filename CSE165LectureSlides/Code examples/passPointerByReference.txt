@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+  
+void changeMe(int* &value, int &newValue){
+  value = &newValue;
+}
+
+int main() {
+  int orginalValue = 10;
+  int* p_orginalValue = &orginalValue;
+  int newValue = 20;
+  changeMe(p_orginalValue, newValue);
+  cout<<*p_orginalValue;
+  return 0;
+}

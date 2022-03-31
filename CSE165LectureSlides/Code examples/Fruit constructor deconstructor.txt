@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+class Fruit{
+  string* name;
+  public:
+    Fruit(string name){
+      this->name = new string(name);
+      cout<<"Contructed "<<*this->name<<endl;
+    }
+    void printInfo();
+    ~Fruit(){
+      cout<<"Decontructed "<<*name<<endl;
+      delete name;
+    }
+};
+
+int main(){
+  cout<<"Program started"<<endl;
+  Fruit apple("apple");
+  cout<<"Program ended"<<endl;
+}
