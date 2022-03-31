@@ -13,7 +13,8 @@
             "compilerPath": "C:/msys64/mingw64/bin/gcc.exe",
             "cStandard": "c17",
             "cppStandard": "c++17",
-            "intelliSenseMode": "windows-gcc-x64"
+            "intelliSenseMode": "windows-gcc-x64",
+            "compileCommands": "${workspaceFolder}/Lab7/6/build-CalculatorCSE165-Desktop_Qt_6_2_3_MinGW_64_bit-Debug/.qtc_clangd/compile_commands.json"
         }
     ],
     "version": 4
